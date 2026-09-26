@@ -1,0 +1,97 @@
+void main() {
+  print("hello umam");
+  print('hello coy');
+  String age = "20,18";
+  print(age);
+  int jumlah = 20;
+  print(jumlah);
+  //nilai ini tidak bisa di ganti kalau udah difinisikan
+
+  /*
+   * nilai ini tidak bisa di rubah 
+   * jika sudah di
+   */
+  String? Statusage = 'muda'; // bole null karena nublabel pake ?
+  Statusage = null;
+  print(Statusage);
+  String hasil = Statusage ?? 'belum di ketahui';
+  print(hasil);
+
+  /*final dengan tipe ekspliset
+   * 
+   */
+
+  final int nim = 1223344;
+  /*nim = 223344; eror karena final itu buat nilai yang sudah pasti/tidak bisa di ubah */
+  print(nim);
+
+  const String Sizesepatu =
+      '40,39'; // const adalah nilai yang sudah di ketahui dari awal
+  print(Sizesepatu);
+
+  late String name; //late adalah sebuah variabel yang tidak bole null tapi bakal di kasih nanti
+  name = 'umam';
+  print(name);
+
+  /*String atau data teks 
+   */
+  String buah = 'Jambu';
+  String Jenis = 'air';
+  print('$buah,$Jenis');
+  print(buah.toUpperCase());
+  /*int
+   */
+  int jumlahmahasiswa = 20;
+  int nilai = 17;
+  int jumlahsks = 3;
+  print('$jumlahmahasiswa,$nilai,$jumlahsks');
+  /*double nilai
+   */
+  double sizesepatu = 39.0;
+  double point = 5.8;
+  print(sizesepatu);
+  print(point);
+  /*num
+   */
+  num size = 17;
+  print(size);
+  size = 17.5;
+  print(size);
+
+  /*bol
+   */
+  bool lampuaktif = true;
+  bool lampumati = false;
+  print(lampuaktif);
+
+  /*list
+   */
+  List<String> namabuah = ['mangga', 'jambu', 'anggur'];
+  print(namabuah[2]);
+  
+  /*Map data dalam bentuk key value
+   */
+  Map<String,dynamic> pembeli = {'nama': 'mangga',
+                             'harga': '8000',
+                             'jenis': 'indramayu'};
+  print (pembeli['nama']);
+  print (pembeli['harga']);
+  print (pembeli['jenis']);
+  
+  /*object
+   */
+  Object nama = 'Umam';
+
+  if (nama is String) {
+    print('Nama: $nama');
+}
+ //*dynamic
+  dynamic data = 'Budi';
+  data = 20 ;
+  data = true;
+  print (data);
+  
+  dynamic jenisolahraga = 'sepak bola';
+  print(jenisolahraga.toUpperCase());
+  
+}
